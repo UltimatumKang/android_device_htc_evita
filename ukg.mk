@@ -35,7 +35,7 @@ TARGET_SCREEN_WIDTH := 720
 $(call inherit-product, vendor/ukg/config/common_phone.mk)
 
 # evita Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/ukg/overlay/evita
+PRODUCT_PACKAGE_OVERLAYS += device/htc/evita/overlay
 
 # Device naming
 PRODUCT_DEVICE := evita
@@ -49,6 +49,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_evita BUILD_FINGERPRINT="cingul
 
 PRODUCT_COPY_FILES +=  \
 	vendor/ukg/prebuilt/hybrid_xhdpi_no_nav.conf:system/etc/beerbong/properties.conf \
-    vendor/ukg/prebuilt/common/media/bootanimation_1280_720.zip:system/media/bootanimation.zip \
+    vendor/ukg/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip \
     vendor/ukg/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/ukg/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd 
