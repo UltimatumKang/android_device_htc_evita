@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2012 The CyanogenMod Project
-# Copyright (C) 2013 The Xylon Experimental
+# Copyright (C) 2013 The Ultimatum Experimental
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -38,6 +38,7 @@ $(call inherit-product, vendor/ukg/config/common_phone.mk)
 PRODUCT_PACKAGE_OVERLAYS += device/htc/evita/overlay
 
 # Device naming
+UKG_BUILDTYPE := RELEASE
 PRODUCT_DEVICE := evita
 PRODUCT_NAME := ukg_evita
 PRODUCT_BRAND := htc
@@ -49,6 +50,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_evita BUILD_FINGERPRINT="cingul
 
 PRODUCT_COPY_FILES +=  \
 	vendor/ukg/prebuilt/hybrid_xhdpi_no_nav.conf:system/etc/beerbong/properties.conf \
-    vendor/ukg/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/ukg/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip \
     vendor/ukg/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/ukg/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd 
